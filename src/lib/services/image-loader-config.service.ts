@@ -27,15 +27,15 @@ export class ImageLoaderConfigService {
 
     concurrency = 5;
 
-    maxCacheSize = -1;
+    maxCacheSize = 50 * 1024 * 1024; // image cache to 50mb. the default value were -1;
 
-    maxCacheAge = -1;
+    maxCacheAge = 20 * 24 * 60 * 60 * 1000; //cache stored for 20 days. -1;
 
     imageReturnType: 'base64' | 'uri' = 'uri';
 
     spinnerName;
 
-    spinnerColor;
+    spinnerColor = "secondary";
 
     httpHeaders: HttpHeaders;
 
