@@ -21,7 +21,7 @@ export class ImageLoaderConfigService {
 
     height = '100%';
 
-    useImg = false;
+    useImg = true;
 
     fallbackUrl;
 
